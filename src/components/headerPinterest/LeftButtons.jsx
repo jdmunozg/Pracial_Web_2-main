@@ -3,11 +3,10 @@ import React from 'react';
 
 
 class LeftButtons extends React.Component{
-    
     constructor(props){
         super(props);
-        this.state = {hover: false};
-        this.state = {hoverd:true}
+        this.state = {  hover: true,
+                        hoverd: true};
         this.hadleClickDos = this.hadleClickDos.bind(this);
         this.hadleClick = this.hadleClick.bind(this);
     }
@@ -44,10 +43,8 @@ class LeftButtons extends React.Component{
                 fontFamily:"sans-serif",
                 fontWeight: "bolder",
                 fontSize:"14px",
-                backgroundColor:'black',
-                color:'white',
-                cursor : 'pointer',
-                margin :'0px',
+                backgroundColor:'white',
+                margin :0,
                 
             }
         }
@@ -60,8 +57,10 @@ class LeftButtons extends React.Component{
                 fontFamily:"sans-serif",
                 fontWeight: "bolder",
                 fontSize:"14px",
-                backgroundColor:'white',
-                margin :0,
+                backgroundColor:'black',
+                color:'white',
+                cursor : 'pointer',
+                margin :'0px',
                 
             }
         }
